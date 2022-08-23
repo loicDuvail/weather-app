@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 110%;
+}
+
+#card {
+  background-color: #000000d0;
+  padding: 2em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 620px;
+  margin: 10px;
+}
+
+#search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  color: white;
+  background-color: #7c7c7c20;
+  transition: 270ms ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-bar {
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-right: 15px;
+  border: none;
+  width: calc(100% - 100px);
+  outline: none;
+  background-color: #7c7c7c20;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+#search-button:hover {
+  background-color: #7c7c7ca0;
+}
+
+#description-box {
+  display: flex;
+  align-content: center;
+  margin-top: 15px;
+  margin-bottom: -2px;
+}
+#icon {
+  margin-left: -7px;
+}
+#description {
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+}
+
+#wind-info {
+  display: flex;
+  align-content: center;
+  position: relative;
+}
+
+#direction {
+  margin-top: -1px;
+  margin-left: 14px;
+  transform: rotate(0deg);
+  transform-origin: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="card">
+      <div id="search-box">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <button id="search-button">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            height="1.5em"
+            width="1.5em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="weather loading">
+        <h2 id="city">city</h2>
+        <h1 id="temp">20°C</h1>
+        <div id="description-box">
+          <img src="" alt="" id="icon" />
+          <div id="description">description</div>
+        </div>
+        <div id="humidity">humidity</div>
+        <div id="wind-info">
+          <div id="wind">wind speed</div>
+          <div id="direction">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              version="1.1"
+              viewBox="0 0 16 16"
+              height="1.1em"
+              width="1.1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.5 16c-0.036 0-0.072-0.004-0.108-0.012-0.229-0.051-0.392-0.254-0.392-0.488v-7.5h-7.5c-0.234 0-0.437-0.163-0.488-0.392s0.064-0.462 0.277-0.561l15-7c0.191-0.089 0.416-0.049 0.565 0.1s0.188 0.374 0.1 0.565l-7 15c-0.083 0.179-0.262 0.289-0.453 0.289zM2.754 7h5.746c0.276 0 0.5 0.224 0.5 0.5v5.746l5.465-11.712-11.712 5.465z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div id="time-display"></div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
